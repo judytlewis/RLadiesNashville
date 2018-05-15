@@ -16,17 +16,6 @@ errorMessageModal <- function(message){
 
 all_iedea_tables <- c("tblBAS", "tblART", "tblCENTER", "tblDIS", "tblLAB","tblLAB_CD4","tblLAB_RNA","tblLTFU","tblMED","tblPROGRAM","tblVIS")
 
-# shinyInput: create a character vector of shiny inputs --------------------------------------------------
-# helper function to assign action to clicked buttons in datatable, function found in many SO posts; 
-# looks like Yihui Xie might be the creator
-shinyInput <- function(FUN, len, id, ...) {
-  inputs <- character(len)
-  for (i in seq_len(len)) {
-    inputs[i] <- as.character(FUN(paste0(id, i), ...))
-  }
-  inputs
-}
-
 # addShinyInput: create a character vector of shiny inputs -----------------------------------------------
 # argument FUN: input type, like actionButton, checkBoxInput, etc
 #         id: first part of id string for Shiny inputs. "button_", "checkBox_" etc
