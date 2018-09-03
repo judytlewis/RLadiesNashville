@@ -1,5 +1,5 @@
 # RLadiesDemo
-Demonstration of interactive, tabbed data tables
+Demonstration of interactive, tabbed data tables  
 *Run app.R and select the supplied errorDetailExample1.csv file of demo data see tabbed tables/detail buttons
 
 This Shiny application is designed to demonstrate some features                   
